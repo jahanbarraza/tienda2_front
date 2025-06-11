@@ -3,9 +3,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { MainLayout } from '@/components/layout/MainLayout';
-import { Login } from '@/pages/Login';
 import { Dashboard } from '@/pages/Dashboard';
 import { Productos } from '@/pages/Productos';
+import { Login } from '@/pages/Login';
+import { Categorias } from '@/pages/Categorias';
 import { authService } from '@/services/auth';
 import { ROUTES } from '@/constants';
 import './App.css';
@@ -58,14 +59,15 @@ function App() {
           <Route index element={<Navigate to={ROUTES.DASHBOARD} replace />} />
           <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
           <Route path={ROUTES.PRODUCTOS} element={<Productos />} />
+          <Route path={ROUTES.CATEGORIAS} element={<Categorias />} />
           
           {/* Páginas placeholder para otras rutas */}
           <Route 
-            path={ROUTES.CATEGORIAS} 
+            path={ROUTES.CLIENTES} 
             element={
               <div className="p-6">
-                <h1 className="text-3xl font-bold">Categorías</h1>
-                <p className="text-gray-600 mt-2">Gestión de categorías - En desarrollo</p>
+                <h1 className="text-3xl font-bold">Clientes</h1>
+                <p className="text-gray-600 mt-2">Gestión de clientes - En desarrollo</p>
               </div>
             } 
           />
