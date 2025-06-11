@@ -1,6 +1,6 @@
 // Constantes de la aplicación
 
-export const API_BASE_URL = 'https://3000-itbbix3uceho178gn5j30-d23ecfad.manus.computer/api/v1';
+export const API_BASE_URL = 'https://3000-i877jmglf3lsahvk3z6rh-5654b314.manus.computer/api/v1';
 
 export const ROUTES = {
   HOME: '/',
