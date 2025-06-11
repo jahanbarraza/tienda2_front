@@ -8,6 +8,7 @@ import { Productos } from '@/pages/Productos';
 import { Login } from '@/pages/Login';
 import { Categorias } from '@/pages/Categorias';
 import { Ventas } from '@/pages/Ventas';
+import Inventario from '@/pages/Inventario';
 import { authService } from '@/services/auth';
 import { ROUTES } from '@/constants';
 import './App.css';
@@ -83,21 +84,7 @@ function App() {
           />
           <Route 
             path={ROUTES.INVENTARIO} 
-            element={
-              <div className="p-6">
-                <h1 className="text-3xl font-bold">Inventario</h1>
-                <p className="text-gray-600 mt-2">Gestión de inventario - En desarrollo</p>
-              </div>
-            } 
-          />
-          <Route 
-            path={ROUTES.INVENTARIO} 
-            element={
-              <div className="p-6">
-                <h1 className="text-3xl font-bold">Inventario</h1>
-                <p className="text-gray-600 mt-2">Control de inventario - En desarrollo</p>
-              </div>
-            } 
+            element={<Inventario />} 
           />
           <Route 
             path={ROUTES.REPORTES} 

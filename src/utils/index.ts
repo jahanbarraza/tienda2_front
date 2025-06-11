@@ -96,3 +96,9 @@ export const getStockStatus = (stockActual: number, stockMinimo: number): {
   return { status: 'high', color: 'text-green-500', text: 'Stock Alto' };
 };
 
+// Función para manejar errores de API
+export const handleApiError = (error: any): void => {
+  console.error('Error en la solicitud API:', error);
+  // Aquí se podría implementar lógica adicional como mostrar notificaciones
+  // o registrar errores en un servicio de monitoreo
+};
