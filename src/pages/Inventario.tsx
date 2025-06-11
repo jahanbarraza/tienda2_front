@@ -38,7 +38,6 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { inventarioService, MovimientoInventario, ProductoInventario } from '../services/inventario';
 import { productoService } from '../services/producto';
-import { MainLayout } from '../components/layout/MainLayout';
 import { AlertCircle, ArrowDownCircle, ArrowUpCircle, Package } from 'lucide-react';
 
 const Inventario = () => {
@@ -127,7 +126,6 @@ const Inventario = () => {
   };
   
   return (
-    <MainLayout>
       <div className="container mx-auto py-6">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold">Inventario</h1>
@@ -443,7 +441,7 @@ const Inventario = () => {
           </TabsContent>
         </Tabs>
       </div>
-    </MainLayout>
+    
   );
 };
 
