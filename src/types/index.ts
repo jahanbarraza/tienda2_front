@@ -117,3 +117,42 @@ export interface AuthUser {
   token: string;
 }
 
+
+// Tipos específicos para el módulo de ventas
+export interface VentaDetalle {
+  detalle_id?: number;
+  venta_id?: number;
+  producto_id: number;
+  cantidad: number;
+  precio_unitario: string;
+  subtotal: string;
+  producto?: Producto;
+}
+
+export interface VentaFormData {
+  cliente_id?: number;
+  productos: {
+    producto_id: number;
+    cantidad: number;
+    precio_unitario: number;
+  }[];
+}
+
+// Tipos para el carrito de ventas
+export interface CarritoItem {
+  producto: Producto;
+  cantidad: number;
+  subtotal: number;
+}
+
+export interface ProcesarVentaRequest {
+  cliente_id?: number;
+  total: number;
+  detalles: {
+    producto_id: number;
+    cantidad: number;
+    precio_unitario: number;
+    subtotal: number;
+  }[];
+}
+

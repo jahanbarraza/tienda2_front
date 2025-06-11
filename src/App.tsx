@@ -7,6 +7,7 @@ import { Dashboard } from '@/pages/Dashboard';
 import { Productos } from '@/pages/Productos';
 import { Login } from '@/pages/Login';
 import { Categorias } from '@/pages/Categorias';
+import { Ventas } from '@/pages/Ventas';
 import { authService } from '@/services/auth';
 import { ROUTES } from '@/constants';
 import './App.css';
@@ -60,7 +61,7 @@ function App() {
           <Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
           <Route path={ROUTES.PRODUCTOS} element={<Productos />} />
           <Route path={ROUTES.CATEGORIAS} element={<Categorias />} />
-          
+          <Route path={ROUTES.VENTAS} element={<Ventas />} />
           {/* Páginas placeholder para otras rutas */}
           <Route 
             path={ROUTES.CLIENTES} 
@@ -81,11 +82,11 @@ function App() {
             } 
           />
           <Route 
-            path={ROUTES.VENTAS} 
+            path={ROUTES.INVENTARIO} 
             element={
               <div className="p-6">
-                <h1 className="text-3xl font-bold">Ventas</h1>
-                <p className="text-gray-600 mt-2">Sistema de ventas - En desarrollo</p>
+                <h1 className="text-3xl font-bold">Inventario</h1>
+                <p className="text-gray-600 mt-2">Gestión de inventario - En desarrollo</p>
               </div>
             } 
           />
