@@ -1,6 +1,6 @@
 // Constantes de la aplicación
 
-export const API_BASE_URL = 'https://3000-i877jmglf3lsahvk3z6rh-5654b314.manus.computer/api/v1';
+export const API_BASE_URL = 'http://localhost:3000/api/v1';
 
 export const ROUTES = {
   HOME: '/',
@@ -48,4 +48,6 @@ export const LOCAL_STORAGE_KEYS = {
   AUTH_TOKEN: 'auth_token',
   USER_DATA: 'user_data',
 } as const;
+
+
 
